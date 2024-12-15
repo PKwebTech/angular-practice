@@ -15,3 +15,25 @@ body {
   padding: 0;
   height: 100%;
 }
+.customScrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.customScrollbar::-webkit-scrollbar-track {
+  background: #3a2c54; /* Background of the scrollbar track */
+}
+
+.customScrollbar::-webkit-scrollbar-thumb {
+  background-color: #9965dd; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.customScrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a565dd; /* Color of the thumb on hover */
+}
+
+/* Firefox scrollbar styles */
+.customScrollbar {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: #9965dd #3a2c54; /* Thumb color and track color */
+}
